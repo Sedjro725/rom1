@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!---remixicons  link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!---google-font  link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav lass="navbar">
+        <a href="#" class="logo">BIENVENUE</a>
+        <div class="nav-links">
+         <ul>
+             <li class="active"><a href="mon cv.html">Mon CV</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="competences.html">Competences</a></li>
+             <li><a href="contact.html">contact</a></li>
+             <li><a href="projet.html">Projets</a></li>
+             <li><a href="site_vente/index.html">Produits</a></li>
+          </ul>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com/Big-rØms Houessou"><i class="ri-facebook-fill"></i></a>
+            <a href="https://google.com/romarichouessou724@gmail.com"><i class="ri-google-line"></i></a>
+            <a href="https://whatsapp.com/"><i class="ri-whatsapp-line"></i></a>
+            <a href="https://twitter.com/Romahouessou"><i class="ri-twitter-line"></i></a>
+             <a href="https://intagram.com/roma_ric724"><i class="ri-instagram-fill"></i></a>
+             <a href="https://linkedin.com/Romaric Houessou"><i class="ri-linkedin-box-fill"></i></a>
+         </div>
+              
+        <img src="img/2.png" alt="menu-hamburger" class="menu-hamburger">
+        
+    </nav>
+   
+    
+</body>
+
+   <script>
+       const menuHamburger = document.querySelector(".menu-hamburger")
+       const navLinks = document.querySelector("div.nav-links")
+
+       menuHamburger.addEventListener('click',()=>{
+       navLinks.classList.toggle('mobile-menu')
+       })
+   </script>
+
+</html> 

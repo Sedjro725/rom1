@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root{
+    --text-color:#ffffff;
+    --main-color:#13bbff;
+    --bg-color:#1f1b24;
+   --big-font : 4.5rem;
+   --h4-font:1.6rem;
+    --p-font:1.1rem;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    width: 10vw;
+    background-image: url(img/im2.jpg);
+    background-size: cover;
+}
+nav {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+nav a {
+    color:white;
+}
+nav .logo {
+    font-size: 2em ;
+    font-weight: bold;
+}
+
+nav .nav-links ul{
+    display: flex;
+
+}
+nav .nav-links ul li {
+    margin: 25px;
+
+}
+
+nav .nav-links ul li.active a {
+    color: #f1e8e9;
+    font-weight: 600;
+}
+nav .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right:50px ;
+    width:35px; 
+} 
+.social{
+    margin-bottom: 40px;
+}
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--main-color);
+    border-radius: 50%;
+    backdrop-filter: brightness(88%);
+    font-size: 20px;
+    margin-right: 17px;
+    box-shadow:  0 0 20px transparent;
+    cursor: pointer;
+    transition: all .55s ease;
+}
+.social a:hover {
+    transform: scale(1.0);
+    box-shadow:  0 0 20px var(--main-color);
+
+}
+
+@media screen and (max-width:900px){
+    nav{
+        padding: 0;
+    }
+    nav .logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+
+
+       
+    }
+    nav .menu-hamburger {
+       display: block;
+        
+
+    } 
+        div.nav-links {
+            top:0;
+            left:0;
+            position: absolute;
+            
+            backdrop-filter: blur(0px);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            transition: all 5s ease;
+               
+        }
+        div.nav-links.mobile-menu{
+            margin-left: O;
+            
+        }
+         
+        
+        div.nav-links ul {
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+        }       
+        
+        nav .nav-links ul li {
+         margin: 25px  0;/* 25 en haut et 0 sur les cotéq */
+         font-size: 1.2em;
+             
+        
+        }
+ 
+} 
+
+
+   
+
+
+
+
+
+
+   
